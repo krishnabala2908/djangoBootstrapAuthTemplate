@@ -1,0 +1,313 @@
+WARNING 2021-02-13 11:07:36,812 log 16979 139748364945152 Not Found: /favicon.ico
+WARNING 2021-02-13 11:07:36,812 log 16979 139748364945152 Not Found: /favicon.ico
+WARNING 2021-02-13 11:07:36,813 basehttp 16979 139748364945152 "GET /favicon.ico HTTP/1.1" 404 12525
+WARNING 2021-02-13 11:07:36,813 basehttp 16979 139748364945152 "GET /favicon.ico HTTP/1.1" 404 12525
+ERROR 2021-02-13 11:07:46,142 log 16979 139748364945152 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 251, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 502, in index
+    app_list = self.get_app_list(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 485, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 434, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 659, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 481, in has_add_permission
+    return request.user.has_perm("%s.%s" % (opts.app_label, codename))
+TypeError: has_perm() takes 1 positional argument but 2 were given
+ERROR 2021-02-13 11:07:46,142 log 16979 139748364945152 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 251, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 502, in index
+    app_list = self.get_app_list(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 485, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 434, in _build_app_dict
+    perms = model_admin.get_model_perms(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 659, in get_model_perms
+    'add': self.has_add_permission(request),
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/admin/options.py", line 481, in has_add_permission
+    return request.user.has_perm("%s.%s" % (opts.app_label, codename))
+TypeError: has_perm() takes 1 positional argument but 2 were given
+ERROR 2021-02-13 11:07:46,206 basehttp 16979 139748364945152 "GET /admin/ HTTP/1.1" 500 123462
+ERROR 2021-02-13 11:07:46,206 basehttp 16979 139748364945152 "GET /admin/ HTTP/1.1" 500 123462
+ERROR 2021-02-13 13:10:31,464 log 23415 139811503904512 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 16, in registration_view
+    account = authenticate(email, raw_password)
+TypeError: authenticate() takes from 0 to 1 positional arguments but 2 were given
+ERROR 2021-02-13 13:10:31,464 log 23415 139811503904512 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 16, in registration_view
+    account = authenticate(email, raw_password)
+TypeError: authenticate() takes from 0 to 1 positional arguments but 2 were given
+ERROR 2021-02-13 13:10:31,530 basehttp 23415 139811503904512 "POST /account/register/ HTTP/1.1" 500 84785
+ERROR 2021-02-13 13:10:31,530 basehttp 23415 139811503904512 "POST /account/register/ HTTP/1.1" 500 84785
+WARNING 2021-02-13 13:11:52,920 views 23575 140126751426304 request is processing
+WARNING 2021-02-13 13:44:01,354 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 14:41:44,007 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 14:41:58,611 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 14:42:00,917 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 14:42:03,036 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 14:42:06,994 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 14:42:48,951 views 25240 140277364905728 request is processing
+WARNING 2021-02-13 15:15:25,761 views 29311 140028259104512 request is processing
+WARNING 2021-02-13 15:15:29,178 views 29311 140028259104512 request is processing
+WARNING 2021-02-13 15:15:35,382 views 29311 140028259104512 request is processing
+WARNING 2021-02-13 15:18:49,707 views 30077 140535373321984 request is processing
+WARNING 2021-02-13 15:19:08,235 views 30077 140535373321984 request is processing
+WARNING 2021-02-13 15:19:51,091 views 30077 140535373321984 request is processing
+WARNING 2021-02-13 15:20:10,477 views 30077 140535373321984 request is processing
+WARNING 2021-02-13 15:20:47,363 views 30077 140535373321984 request is processing
+ERROR 2021-02-13 15:21:02,371 log 30077 140535373321984 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 39, in login_view
+    if form.is_valid():
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 172, in errors
+    self.full_clean()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 375, in full_clean
+    self._clean_form()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 402, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/forms.py", line 23, in clean
+    email = self.cleaned_data['email']
+KeyError: 'email'
+ERROR 2021-02-13 15:21:02,371 log 30077 140535373321984 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 39, in login_view
+    if form.is_valid():
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 177, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 172, in errors
+    self.full_clean()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 375, in full_clean
+    self._clean_form()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/forms/forms.py", line 402, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/forms.py", line 23, in clean
+    email = self.cleaned_data['email']
+KeyError: 'email'
+ERROR 2021-02-13 15:21:02,416 basehttp 30077 140535373321984 "POST /account/login/ HTTP/1.1" 500 101916
+ERROR 2021-02-13 15:21:02,416 basehttp 30077 140535373321984 "POST /account/login/ HTTP/1.1" 500 101916
+WARNING 2021-02-13 15:35:55,360 views 30682 139872351950592 request is processing
+WARNING 2021-02-13 16:18:11,792 views 32524 140380503725824 request is processing
+WARNING 2021-02-13 16:25:49,140 views 1504 140555489113856 request is processing
+WARNING 2021-02-13 16:27:28,930 views 1755 140078912014080 request is processing
+WARNING 2021-02-13 16:27:35,770 views 1755 140078912014080 request is processing
+WARNING 2021-02-13 16:27:52,089 views 1755 140078912014080 request is processing
+WARNING 2021-02-13 16:28:43,700 views 1878 140714939774720 request is processing
+WARNING 2021-02-13 16:30:06,499 views 1878 140714939774720 request is processing
+WARNING 2021-02-13 16:31:02,782 views 1878 140714939774720 request is processing
+ERROR 2021-02-13 16:32:59,152 log 1878 140714939774720 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 55, in login_view
+    return render(request, 'account/login.html', context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2021-02-13 16:32:59,152 log 1878 140714939774720 Internal Server Error: /account/login/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 55, in login_view
+    return render(request, 'account/login.html', context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2021-02-13 16:32:59,179 basehttp 1878 140714939774720 "GET /account/login/ HTTP/1.1" 500 144983
+ERROR 2021-02-13 16:32:59,179 basehttp 1878 140714939774720 "GET /account/login/ HTTP/1.1" 500 144983
+WARNING 2021-02-13 16:42:10,141 views 1878 140714939774720 request is processing
+ERROR 2021-02-13 16:42:17,564 log 1878 140714939774720 Internal Server Error: /account/account/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 77, in account_view
+    return render(request, 'account/account.html', context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2021-02-13 16:42:17,564 log 1878 140714939774720 Internal Server Error: /account/account/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 77, in account_view
+    return render(request, 'account/account.html', context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2021-02-13 16:42:17,610 basehttp 1878 140714939774720 "GET /account/account/ HTTP/1.1" 500 144155
+ERROR 2021-02-13 16:42:17,610 basehttp 1878 140714939774720 "GET /account/account/ HTTP/1.1" 500 144155
+WARNING 2021-02-13 16:42:43,671 views 1878 140714939774720 request is processing
+WARNING 2021-02-13 16:43:27,888 views 1878 140714939774720 request is processing
+WARNING 2021-02-13 17:28:09,342 views 3606 140241553848064 request is processing

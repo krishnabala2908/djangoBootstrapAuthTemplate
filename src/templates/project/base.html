@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "project/header.html" %}
+  </head>
+
+  <body>
+    <style type="text/css">
+      .main {
+        min-height: 100vh;
+        height: 100%;
+      }
+    </style>
+    <div class="main">
+      <div class="container-fluid">{% include "project/navbar.html" %}</div>
+      <div class="container-fluid">
+        {% block content %}
+        <h1>Hello</h1>
+
+        {% endblock content%}
+      </div>
+      {% include "project/bodycdns.html" %}
+    </div>
+  </body>
+
+  <footer>{% include "project/footer.html" %}</footer>
+</html>
