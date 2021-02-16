@@ -8,21 +8,48 @@ from .forms import (
     AccountUpdateForm,
 
 )
-
+from django.contrib import messages
+from django.contrib.sites.shortcuts import get_current_site
+from django.utils.encoding import force_bytes, force_text
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.template.loader import render_to_string
+from .tokens import account_activation_token
+from django.contrib.auth.models import User
+from django.core.mail import EmailMessage
 
 # Create your views here.
+
+
 def registration_view(request):
     context = {}
     if request.POST:
         form = RegistrationForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save(commit=False)
+            user.is_active = False
+            user.save()
+            # form.save()
+
             email = form.cleaned_data.get('email')
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
-            account = authenticate(email=email, password=raw_password)
-            login(request, account)
-            return redirect('home')
+            current_site = get_current_site(request)
+            mail_subject = 'Activate your blog account.'
+            message = render_to_string('account/acc_active_email.html', {
+                'user': user,
+                'domain': current_site.domain,
+                'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+                'token': account_activation_token.make_token(user),
+            })
+            to_email = form.cleaned_data.get('email')
+            email = EmailMessage(
+                mail_subject, message, to=[to_email]
+            )
+            email.send()
+            messages.success(request, ('Please Confirm your email to complete registration.'))
+            # account = authenticate(email=email, password=raw_password)
+            # login(request, account)
+            return redirect('login')
         else:  # executes when form validation fails
 
             context['registration_form'] = form
@@ -87,3 +114,22 @@ def account_view(request):
 
 def must_authenticate_view(request):
     return render(request, 'account/must_authenticate.html', {})
+
+
+def activate(request, uidb64, token):
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = Account.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, Account.DoesNotExist):
+        user = None
+    if user is not None and account_activation_token.check_token(user, token):
+        user.is_active = True
+        user.save()
+        login(request, user)
+        messages.success(request, ('Your account have been confirmed.'))
+        return redirect('login')
+        # return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
+    else:
+        # return HttpResponse('Activation link is invalid!')
+        messages.warning(request, ('The confirmation link was invalid, possibly because it has already been used.'))
+        return redirect('home')

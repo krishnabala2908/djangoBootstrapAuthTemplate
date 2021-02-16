@@ -366,3 +366,269 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateDoesNotExist: account/password_reset_view.html
 ERROR 2021-02-16 13:05:17,668 basehttp 19914 140489072953088 "GET /account/password_reset/ HTTP/1.1" 500 98287
 ERROR 2021-02-16 13:05:17,668 basehttp 19914 140489072953088 "GET /account/password_reset/ HTTP/1.1" 500 98287
+ERROR 2021-02-16 15:51:07,481 log 31365 139809089976064 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 48, in registration_view
+    email.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 241, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/__init__.py", line 34, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError:  doesn't look like a module path
+ERROR 2021-02-16 15:51:07,481 log 31365 139809089976064 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 48, in registration_view
+    email.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 241, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/__init__.py", line 34, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError:  doesn't look like a module path
+ERROR 2021-02-16 15:51:07,541 basehttp 31365 139809089976064 "POST /account/register/ HTTP/1.1" 500 106297
+ERROR 2021-02-16 15:51:07,541 basehttp 31365 139809089976064 "POST /account/register/ HTTP/1.1" 500 106297
+ERROR 2021-02-16 15:58:40,403 log 31956 139680805078784 Internal Server Error: /account/activate/OA/ai670c-87e87f612c04367ca77e661b3b17b1d8/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 122, in activate
+    user = User.objects.get(pk=uid)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/db/models/manager.py", line 191, in __get__
+    cls._meta.swapped,
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'account.Account'
+ERROR 2021-02-16 15:58:40,403 log 31956 139680805078784 Internal Server Error: /account/activate/OA/ai670c-87e87f612c04367ca77e661b3b17b1d8/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 122, in activate
+    user = User.objects.get(pk=uid)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/db/models/manager.py", line 191, in __get__
+    cls._meta.swapped,
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'account.Account'
+ERROR 2021-02-16 15:58:40,455 basehttp 31956 139680805078784 "GET /account/activate/OA/ai670c-87e87f612c04367ca77e661b3b17b1d8/ HTTP/1.1" 500 87714
+ERROR 2021-02-16 15:58:40,455 basehttp 31956 139680805078784 "GET /account/activate/OA/ai670c-87e87f612c04367ca77e661b3b17b1d8/ HTTP/1.1" 500 87714
+ERROR 2021-02-16 15:59:47,398 log 31956 139680817501952 Internal Server Error: /account/activate/OQ/ai6739-7701f30b58ca5a7e6266523e8f7e1150/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 122, in activate
+    user = User.objects.get(pk=uid)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/db/models/manager.py", line 191, in __get__
+    cls._meta.swapped,
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'account.Account'
+ERROR 2021-02-16 15:59:47,398 log 31956 139680817501952 Internal Server Error: /account/activate/OQ/ai6739-7701f30b58ca5a7e6266523e8f7e1150/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 122, in activate
+    user = User.objects.get(pk=uid)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/db/models/manager.py", line 191, in __get__
+    cls._meta.swapped,
+AttributeError: Manager isn't available; 'auth.User' has been swapped for 'account.Account'
+ERROR 2021-02-16 15:59:47,445 basehttp 31956 139680817501952 "GET /account/activate/OQ/ai6739-7701f30b58ca5a7e6266523e8f7e1150/ HTTP/1.1" 500 87714
+ERROR 2021-02-16 15:59:47,445 basehttp 31956 139680817501952 "GET /account/activate/OQ/ai6739-7701f30b58ca5a7e6266523e8f7e1150/ HTTP/1.1" 500 87714
+ERROR 2021-02-16 16:16:52,635 log 32282 140036884039424 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 222, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 235, in form_valid
+    form.save(**opts)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 325, in save
+    user_email, html_email_template_name=html_email_template_name,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 273, in send_mail
+    email_message.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+ERROR 2021-02-16 16:16:52,635 log 32282 140036884039424 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 222, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 235, in form_valid
+    form.save(**opts)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 325, in save
+    user_email, html_email_template_name=html_email_template_name,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 273, in send_mail
+    email_message.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+ERROR 2021-02-16 16:16:52,699 basehttp 32282 140036884039424 "POST /account/password_reset/ HTTP/1.1" 500 162577
+ERROR 2021-02-16 16:16:52,699 basehttp 32282 140036884039424 "POST /account/password_reset/ HTTP/1.1" 500 162577
+ERROR 2021-02-16 16:27:40,606 log 1838 140066110764800 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 222, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 235, in form_valid
+    form.save(**opts)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 325, in save
+    user_email, html_email_template_name=html_email_template_name,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 273, in send_mail
+    email_message.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+ERROR 2021-02-16 16:27:40,606 log 1838 140066110764800 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 222, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/views.py", line 235, in form_valid
+    form.save(**opts)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 325, in save
+    user_email, html_email_template_name=html_email_template_name,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/forms.py", line 273, in send_mail
+    email_message.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 102, in send_messages
+    new_conn_created = self.open()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 62, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib/python3.6/socket.py", line 704, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+ERROR 2021-02-16 16:27:40,645 basehttp 1838 140066110764800 "POST /account/password_reset/ HTTP/1.1" 500 162577
+ERROR 2021-02-16 16:27:40,645 basehttp 1838 140066110764800 "POST /account/password_reset/ HTTP/1.1" 500 162577

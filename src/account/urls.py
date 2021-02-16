@@ -4,6 +4,7 @@ from .views import (registration_view,
                     login_view,
                     account_view,
                     must_authenticate_view,
+                    activate,
                     )
 
 from django.contrib.auth import views as auth_views
@@ -14,6 +15,8 @@ urlpatterns = [
     path('login/', login_view, name='login'),
     path('account/', account_view, name='account'),
     path('must_authenticate/', must_authenticate_view, name="must_authenticate"),
+    path('activate/<uidb64>/<token>/', activate, name='activate'),
+
     # Password reset links (ref: https://github.com/django/django/blob/master/django/contrib/auth/views.py)
     path('password_change/done/', auth_views.PasswordChangeDoneView.as_view(template_name='account/password_change_done.html'),
          name='password_change_done'),
@@ -25,8 +28,8 @@ urlpatterns = [
          name='password_reset_done'),
 
     path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(
-        template_name='account/password_rest_conform_form.html'), name='password_reset_confirm'),
-    
+        template_name='account/password_reset_conform.html'), name='password_reset_confirm'),
+
     path(
         'password_reset/', auth_views.PasswordResetView.as_view(template_name='account/password_reset_form.html'),
         name='password_reset'),
