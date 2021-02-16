@@ -1,37 +1,78 @@
 {% extends "project/base.html" %} 
 {% block content %}
-<h1>Account</h1>
+<style type="text/css" >
+	.form-signin {
+		width: 100%;
+		max-width: 330px;
+		padding: 10px;
+		
+		margin: auto;
 
-<form action="" method="post">
-{% csrf_token %}
-<!-- looping through the form for fields ,errors,labels and helptext -->
-{% for field in account_form %}
-<p>
-
-    <!-- label and field -->
-	{{field.label_tag}} {{field}}
-	
-    <!-- help text -->
-    {% if field.help_text %}
-    <small style="color: grey">{{field.help_text}}</small>
+	  }
+	 
+	  .form-signin .form-control {
+		position: relative;
+		box-sizing: border-box;
+		height: auto;
+		padding: 10px;
+		font-size: 16px;
+	  }
+	  .form-signin .form-control:focus {
+		z-index: 2;
+	  }
+	  .form-signin input[type="email"] {
+		margin-bottom: -1px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	  }
+	  .form-signin input[type="password"] {
+		margin-bottom: 10px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	  }
+	  .h3{
+		text-align: center;
+	}
+</style>
+<form class="form-signin" action="" method="post">
+	{% csrf_token %}
+    
+    <h1 class="h3 mb-3 fw-normal">Account</h1>
+    
+    <input type="email"  name ='email' id="inputEmail" class="form-control" placeholder="Email address"  value= {{ account_form.initial.email }} required autofocus>
+    <br>
+    <input type="text" name = 'username' id="inputUsername" class="form-control" placeholder="Enter Username" value= {{ account_form.initial.username }} required>
+    <!-- looping through the form for fields ,errors,labels and helptext -->
+	{% for field in account_form %}
+	<p>
+		<!-- error block -->
+		{% for error in field.errors %}
+		<p style="color: red">{{error}}</p>
+		{% endfor %}
+	</p>
+	{% endfor %}
+	<!-- non field errors -->
+	{% if account_form.non_field_errors %}
+	<div style="color: red">
+		<p>{{ account_form.non_field_errors }}</p>
+	</div>
 	{% endif %}
 
-	<!-- error block -->
-	{% for error in field.errors %}
-	<p style="color: red">{{error}}</p>
-	{% endfor %}
+	<!-- success message -->
+	
+	{% if success_message %}
+	<div class="alert alert-success text-center" role="alert">
+		{{ success_message }}
+	  </div>
+		
+	{% endif %}
+		
 
-</p>
-{% endfor %}
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Update Account</button>
 
-<!-- non field errors -->
-{% if account_form.non_field_errors %}
-<div style="color: red">
-    <p>{{ account_form.non_field_errors }}</p>
-</div>
-{% endif %}
-
-<button type="submit" class="btn btn-primary">Save Changes</button>
 </form>
+<div class="d-flex flex-column">
+	<a class="m-auto" href="{% url 'password_change' %}">Change password</a>
+</div>
 
 {% endblock content %}

@@ -278,3 +278,91 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateDoesNotExist: base.html
 ERROR 2021-02-13 16:42:17,610 basehttp 1878 140714939774720 "GET /account/account/ HTTP/1.1" 500 144155
 ERROR 2021-02-13 16:42:17,610 basehttp 1878 140714939774720 "GET /account/account/ HTTP/1.1" 500 144155
+ERROR 2021-02-13 22:33:13,615 log 10819 140640061241088 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:33:13,615 log 10819 140640061241088 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:33:13,678 basehttp 10819 140640061241088 "POST /account/register/ HTTP/1.1" 500 93920
+ERROR 2021-02-13 22:33:13,678 basehttp 10819 140640061241088 "POST /account/register/ HTTP/1.1" 500 93920
+ERROR 2021-02-13 22:41:30,340 log 15710 140478165432064 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:41:30,340 log 15710 140478165432064 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:41:30,407 basehttp 15710 140478165432064 "POST /account/register/ HTTP/1.1" 500 93932
+ERROR 2021-02-13 22:41:30,407 basehttp 15710 140478165432064 "POST /account/register/ HTTP/1.1" 500 93932
+ERROR 2021-02-16 13:05:17,584 log 19914 140489072953088 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/password_reset_view.html
+ERROR 2021-02-16 13:05:17,584 log 19914 140489072953088 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/password_reset_view.html
+ERROR 2021-02-16 13:05:17,668 basehttp 19914 140489072953088 "GET /account/password_reset/ HTTP/1.1" 500 98287
+ERROR 2021-02-16 13:05:17,668 basehttp 19914 140489072953088 "GET /account/password_reset/ HTTP/1.1" 500 98287

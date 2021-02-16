@@ -311,3 +311,157 @@ ERROR 2021-02-13 16:42:17,610 basehttp 1878 140714939774720 "GET /account/accoun
 WARNING 2021-02-13 16:42:43,671 views 1878 140714939774720 request is processing
 WARNING 2021-02-13 16:43:27,888 views 1878 140714939774720 request is processing
 WARNING 2021-02-13 17:28:09,342 views 3606 140241553848064 request is processing
+WARNING 2021-02-13 20:31:26,243 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 20:31:27,384 log 10819 140640061241088 Not Found: /favicon.ico
+WARNING 2021-02-13 20:31:27,384 log 10819 140640061241088 Not Found: /favicon.ico
+WARNING 2021-02-13 20:31:27,384 basehttp 10819 140640061241088 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-13 20:31:27,384 basehttp 10819 140640061241088 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-13 20:31:37,388 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 20:31:49,577 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:28:04,780 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:28:45,541 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:29:31,620 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:29:33,382 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:30:40,909 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:30:50,608 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:30:54,902 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:32:24,586 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:32:31,262 views 10819 140640061241088 request is processing
+WARNING 2021-02-13 22:32:35,916 views 10819 140640061241088 request is processing
+ERROR 2021-02-13 22:33:13,615 log 10819 140640061241088 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:33:13,615 log 10819 140640061241088 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:33:13,678 basehttp 10819 140640061241088 "POST /account/register/ HTTP/1.1" 500 93920
+ERROR 2021-02-13 22:33:13,678 basehttp 10819 140640061241088 "POST /account/register/ HTTP/1.1" 500 93920
+ERROR 2021-02-13 22:41:30,340 log 15710 140478165432064 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:41:30,340 log 15710 140478165432064 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py", line 23, in registration_view
+    login(request, account)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 126, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/utils/functional.py", line 241, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+ERROR 2021-02-13 22:41:30,407 basehttp 15710 140478165432064 "POST /account/register/ HTTP/1.1" 500 93932
+ERROR 2021-02-13 22:41:30,407 basehttp 15710 140478165432064 "POST /account/register/ HTTP/1.1" 500 93932
+WARNING 2021-02-13 22:45:16,191 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:47:22,106 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:49:49,998 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:50:58,860 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:52:06,458 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:53:13,594 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:53:36,109 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:57:21,918 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 22:58:08,123 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:03:02,962 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:04:16,958 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:04:24,131 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:04:28,730 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:04:31,234 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:04:50,438 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:08:55,921 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:20:36,263 views 16182 139923145242368 request is processing
+WARNING 2021-02-13 23:20:40,588 views 16182 139923145242368 request is processing
+WARNING 2021-02-14 09:02:03,156 views 10875 140112701085440 request is processing
+WARNING 2021-02-14 09:02:03,914 log 10875 140112701085440 Not Found: /favicon.ico
+WARNING 2021-02-14 09:02:03,914 log 10875 140112701085440 Not Found: /favicon.ico
+WARNING 2021-02-14 09:02:03,915 basehttp 10875 140112701085440 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-14 09:02:03,915 basehttp 10875 140112701085440 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-14 09:02:18,028 views 10875 140112701085440 request is processing
+WARNING 2021-02-16 11:19:12,727 views 13046 139645916329728 request is processing
+WARNING 2021-02-16 11:19:13,401 log 13046 139645916329728 Not Found: /favicon.ico
+WARNING 2021-02-16 11:19:13,401 log 13046 139645916329728 Not Found: /favicon.ico
+WARNING 2021-02-16 11:19:13,402 basehttp 13046 139645916329728 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-16 11:19:13,402 basehttp 13046 139645916329728 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-16 11:32:05,591 views 13046 139645916329728 request is processing
+WARNING 2021-02-16 11:32:41,069 views 13046 139645916329728 request is processing
+WARNING 2021-02-16 11:32:49,662 views 13046 139645916329728 request is processing
+WARNING 2021-02-16 11:32:51,934 views 13046 139645916329728 request is processing
+WARNING 2021-02-16 13:01:19,131 views 19477 139818601080576 request is processing
+WARNING 2021-02-16 13:01:53,004 views 19477 139818601080576 request is processing
+WARNING 2021-02-16 13:02:11,640 views 19477 139818601080576 request is processing
+WARNING 2021-02-16 13:02:38,571 views 19477 139818601080576 request is processing
+ERROR 2021-02-16 13:05:17,584 log 19914 140489072953088 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/password_reset_view.html
+ERROR 2021-02-16 13:05:17,584 log 19914 140489072953088 Internal Server Error: /account/password_reset/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/env/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/password_reset_view.html
+ERROR 2021-02-16 13:05:17,668 basehttp 19914 140489072953088 "GET /account/password_reset/ HTTP/1.1" 500 98287
+ERROR 2021-02-16 13:05:17,668 basehttp 19914 140489072953088 "GET /account/password_reset/ HTTP/1.1" 500 98287
+WARNING 2021-02-16 13:07:27,746 views 20034 140421560641280 request is processing
+WARNING 2021-02-16 13:17:48,156 views 21200 140129146500864 request is processing
+WARNING 2021-02-16 13:17:55,641 views 21200 140129146500864 request is processing
+WARNING 2021-02-16 13:18:43,225 views 21200 140129146500864 request is processing
+WARNING 2021-02-16 15:04:47,867 log 21200 140129146500864 Not Found: /favicon.ico
+WARNING 2021-02-16 15:04:47,867 log 21200 140129146500864 Not Found: /favicon.ico
+WARNING 2021-02-16 15:04:47,893 basehttp 21200 140129146500864 "GET /favicon.ico HTTP/1.1" 404 12539
+WARNING 2021-02-16 15:04:47,893 basehttp 21200 140129146500864 "GET /favicon.ico HTTP/1.1" 404 12539
+WARNING 2021-02-16 15:07:19,209 log 21200 140129146500864 Not Found: /favicon.ico
+WARNING 2021-02-16 15:07:19,209 log 21200 140129146500864 Not Found: /favicon.ico
+WARNING 2021-02-16 15:07:19,210 basehttp 21200 140129146500864 "GET /favicon.ico HTTP/1.1" 404 12539
+WARNING 2021-02-16 15:07:19,210 basehttp 21200 140129146500864 "GET /favicon.ico HTTP/1.1" 404 12539

@@ -16,6 +16,7 @@ def registration_view(request):
     if request.POST:
         form = RegistrationForm(request.POST)
         if form.is_valid():
+            form.save()
             email = form.cleaned_data.get('email')
             username = form.cleaned_data.get('username')
             raw_password = form.cleaned_data.get('password1')
@@ -23,6 +24,7 @@ def registration_view(request):
             login(request, account)
             return redirect('home')
         else:  # executes when form validation fails
+
             context['registration_form'] = form
     else:  # GET REQUEST
         form = RegistrationForm()
@@ -64,7 +66,13 @@ def account_view(request):
     if request.POST:
         form = AccountUpdateForm(request.POST, instance=request.user)
         if form.is_valid():
+
+            form.initial = {
+                "email": form.cleaned_data['email'],
+                "username": form.cleaned_data['username'],
+            }
             form.save()
+            context['success_message'] = "Updated"
             # return redirect('home')
     else:
         form = AccountUpdateForm(
@@ -75,3 +83,7 @@ def account_view(request):
         )
     context['account_form'] = form
     return render(request, 'account/account.html', context)
+
+
+def must_authenticate_view(request):
+    return render(request, 'account/must_authenticate.html', {})
