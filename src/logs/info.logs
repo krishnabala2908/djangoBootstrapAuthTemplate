@@ -2111,3 +2111,73 @@ INFO 2021-02-16 16:33:34,629 basehttp 2058 140389251958528 "GET /account/logout/
 WARNING 2021-02-16 16:33:34,635 views 2058 140389251958528 request is processing
 INFO 2021-02-16 16:33:34,662 basehttp 2058 140389251958528 "GET / HTTP/1.1" 200 11842
 INFO 2021-02-16 16:33:34,662 basehttp 2058 140389251958528 "GET / HTTP/1.1" 200 11842
+INFO 2021-02-16 16:56:44,186 autoreload 3611 139700580697920 Watching for file changes with StatReloader
+INFO 2021-02-16 16:56:53,042 basehttp 3611 139700468782848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-02-16 16:56:53,042 basehttp 3611 139700468782848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-02-16 16:56:53,111 basehttp 3611 139700468782848 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 12169
+INFO 2021-02-16 16:56:53,111 basehttp 3611 139700468782848 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 12169
+INFO 2021-02-16 16:57:03,789 basehttp 3611 139700468782848 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2021-02-16 16:57:03,789 basehttp 3611 139700468782848 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2021-02-16 16:57:03,917 basehttp 3611 139700468782848 "GET /admin/ HTTP/1.1" 200 15734
+INFO 2021-02-16 16:57:03,917 basehttp 3611 139700468782848 "GET /admin/ HTTP/1.1" 200 15734
+INFO 2021-02-16 16:57:16,381 basehttp 3611 139700468782848 "GET /admin/account/account/ HTTP/1.1" 200 21988
+INFO 2021-02-16 16:57:16,381 basehttp 3611 139700468782848 "GET /admin/account/account/ HTTP/1.1" 200 21988
+INFO 2021-02-16 16:57:16,496 basehttp 3611 139700468782848 "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+INFO 2021-02-16 16:57:16,496 basehttp 3611 139700468782848 "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+WARNING 2021-02-16 16:58:22,492 log 3611 139700468782848 Not Found: /q
+WARNING 2021-02-16 16:58:22,492 log 3611 139700468782848 Not Found: /q
+WARNING 2021-02-16 16:58:22,494 basehttp 3611 139700468782848 "GET /q HTTP/1.1" 404 12498
+WARNING 2021-02-16 16:58:22,494 basehttp 3611 139700468782848 "GET /q HTTP/1.1" 404 12498
+INFO 2021-02-16 17:03:51,599 autoreload 3611 139700580697920 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py changed, reloading.
+INFO 2021-02-16 17:03:52,149 autoreload 4705 140648629200704 Watching for file changes with StatReloader
+INFO 2021-02-16 17:04:44,400 autoreload 4705 140648629200704 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/views.py changed, reloading.
+INFO 2021-02-16 17:04:44,934 autoreload 4778 140157893097280 Watching for file changes with StatReloader
+INFO 2021-02-16 17:06:01,212 autoreload 4778 140157893097280 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py changed, reloading.
+INFO 2021-02-16 17:06:01,895 autoreload 4970 139840706856768 Watching for file changes with StatReloader
+INFO 2021-02-16 17:06:50,988 autoreload 4970 139840706856768 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/src/urls.py changed, reloading.
+INFO 2021-02-16 17:06:51,445 autoreload 5067 140109452375872 Watching for file changes with StatReloader
+INFO 2021-02-16 17:06:53,599 autoreload 5067 140109452375872 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/src/urls.py changed, reloading.
+INFO 2021-02-16 17:06:54,084 autoreload 5095 140499534493504 Watching for file changes with StatReloader
+INFO 2021-02-16 17:08:10,103 autoreload 5095 140499534493504 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/src/urls.py changed, reloading.
+INFO 2021-02-16 17:08:10,624 autoreload 5228 140529301260096 Watching for file changes with StatReloader
+INFO 2021-02-16 17:08:18,409 autoreload 5245 140555524085568 Watching for file changes with StatReloader
+INFO 2021-02-16 17:08:25,598 autoreload 5245 140555524085568 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/src/urls.py changed, reloading.
+INFO 2021-02-16 17:08:26,065 autoreload 5273 140117228869440 Watching for file changes with StatReloader
+INFO 2021-02-16 17:08:41,385 autoreload 5273 140117228869440 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/urls.py changed, reloading.
+INFO 2021-02-16 17:08:41,876 autoreload 5303 139776763197248 Watching for file changes with StatReloader
+INFO 2021-02-16 17:08:44,019 autoreload 5303 139776763197248 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/urls.py changed, reloading.
+INFO 2021-02-16 17:08:44,528 autoreload 5321 140400733706048 Watching for file changes with StatReloader
+INFO 2021-02-16 17:09:03,897 autoreload 5321 140400733706048 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/urls.py changed, reloading.
+INFO 2021-02-16 17:09:04,362 autoreload 5351 140704656811840 Watching for file changes with StatReloader
+INFO 2021-02-16 17:09:13,722 autoreload 5351 140704656811840 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/urls.py changed, reloading.
+INFO 2021-02-16 17:09:14,201 autoreload 5371 139668692510528 Watching for file changes with StatReloader
+INFO 2021-02-16 17:10:22,485 autoreload 5607 139905201280832 Watching for file changes with StatReloader
+INFO 2021-02-16 17:10:35,779 autoreload 5607 139905201280832 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/src/urls.py changed, reloading.
+INFO 2021-02-16 17:10:36,352 autoreload 5638 140525810542400 Watching for file changes with StatReloader
+INFO 2021-02-16 17:12:31,020 autoreload 5638 140525810542400 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/views.py changed, reloading.
+INFO 2021-02-16 17:12:31,673 autoreload 5973 140113388894016 Watching for file changes with StatReloader
+INFO 2021-02-16 17:12:32,956 autoreload 5973 140113388894016 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/views.py changed, reloading.
+INFO 2021-02-16 17:12:33,431 autoreload 5983 140579148502848 Watching for file changes with StatReloader
+INFO 2021-02-16 17:12:42,518 autoreload 5999 139959562901312 Watching for file changes with StatReloader
+INFO 2021-02-16 17:12:59,899 autoreload 5999 139959562901312 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/views.py changed, reloading.
+INFO 2021-02-16 17:13:00,703 autoreload 6028 139791814018880 Watching for file changes with StatReloader
+WARNING 2021-02-16 17:13:22,563 log 6028 139791702103808 Not Found: /5
+WARNING 2021-02-16 17:13:22,563 log 6028 139791702103808 Not Found: /5
+WARNING 2021-02-16 17:13:22,564 basehttp 6028 139791702103808 "GET /5 HTTP/1.1" 404 12498
+WARNING 2021-02-16 17:13:22,564 basehttp 6028 139791702103808 "GET /5 HTTP/1.1" 404 12498
+INFO 2021-02-16 17:23:28,566 autoreload 6028 139791814018880 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/core/views.py changed, reloading.
+INFO 2021-02-16 17:23:29,228 autoreload 6678 139791868651328 Watching for file changes with StatReloader
+WARNING 2021-02-16 17:23:38,854 log 6678 139791756736256 Not Found: /55
+WARNING 2021-02-16 17:23:38,854 log 6678 139791756736256 Not Found: /55
+WARNING 2021-02-16 17:23:38,856 basehttp 6678 139791756736256 "GET /55 HTTP/1.1" 404 12502
+WARNING 2021-02-16 17:23:38,856 basehttp 6678 139791756736256 "GET /55 HTTP/1.1" 404 12502
+INFO 2021-02-16 17:25:58,529 autoreload 6678 139791868651328 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/views.py changed, reloading.
+INFO 2021-02-16 17:25:59,183 autoreload 6835 140020679345984 Watching for file changes with StatReloader
+INFO 2021-02-16 17:27:47,003 autoreload 6835 140020679345984 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/urls.py changed, reloading.
+INFO 2021-02-16 17:27:47,655 autoreload 6981 140690841347904 Watching for file changes with StatReloader
+INFO 2021-02-16 17:27:49,956 autoreload 6981 140690841347904 /home/krishna/Desktop/ProjectTemplates/djangoBootstrapAuthTemplate/src/account/urls.py changed, reloading.
+INFO 2021-02-16 17:27:50,775 autoreload 6996 140595089852224 Watching for file changes with StatReloader
+WARNING 2021-02-16 17:30:29,366 views 6996 140594978199296 request is processing
+INFO 2021-02-16 17:30:29,536 basehttp 6996 140594978199296 "GET / HTTP/1.1" 200 11864
+INFO 2021-02-16 17:30:29,536 basehttp 6996 140594978199296 "GET / HTTP/1.1" 200 11864
+INFO 2021-02-19 21:14:56,267 autoreload 13946 139651253131072 Watching for file changes with StatReloader

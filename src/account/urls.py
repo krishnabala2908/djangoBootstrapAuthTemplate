@@ -11,10 +11,15 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('register/', registration_view, name='register'),
+
     path('logout/', logout_view, name='logout'),
+
     path('login/', login_view, name='login'),
+
     path('account/', account_view, name='account'),
+
     path('must_authenticate/', must_authenticate_view, name="must_authenticate"),
+
     path('activate/<uidb64>/<token>/', activate, name='activate'),
 
     # Password reset links (ref: https://github.com/django/django/blob/master/django/contrib/auth/views.py)
